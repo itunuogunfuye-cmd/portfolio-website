@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 import { useTheme } from '@/context/theme'
-import focusDockImg from '@/imports/dockfinal.png'
+import focusDockImg from '@/imports/Dockfinal.png'
 import smartPantryImg from '@/imports/lego.png'
 import cardboard01 from '@/assets/focus-dock/cardboard-01.jpg'
 import cardboard02 from '@/assets/focus-dock/cardboard-02.jpg'
