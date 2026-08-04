@@ -23,7 +23,6 @@ import render03 from '@/assets/lego-police-story/render-03.png'
 import render04 from '@/assets/lego-police-story/render-04.png'
 import render05 from '@/assets/lego-police-story/render-05.png'
 import chaseGif from '@/assets/lego-police-story/chase.gif'
-'@/assets/lego-police-story/drone.gif'
 import finalFilm from '@/assets/lego-police-story/final-film.mp4'
 import filmPoster from '@/assets/lego-police-story/poster.png' // optional
 
