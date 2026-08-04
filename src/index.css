@@ -1,0 +1,90 @@
+@import 'https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap';
+@import 'tailwindcss';
+
+:root {
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --background: #F8F6F2;
+  --foreground: #111111;
+  --card: #F0EDE8;
+  --card-foreground: #111111;
+  --primary: #111111;
+  --primary-foreground: #F8F6F2;
+  --secondary: #ECEAE5;
+  --secondary-foreground: #444444;
+  --muted: #E8E5DF;
+  --muted-foreground: #777777;
+  --accent: #7A8F52;
+  --accent-foreground: #ffffff;
+  --border: rgba(17, 17, 17, 0.10);
+  --ring: #7A8F52;
+  --radius: 8px;
+}
+
+.dark {
+  --background: #0B0B0B;
+  --foreground: #F4F4F4;
+  --card: #141414;
+  --card-foreground: #F4F4F4;
+  --primary: #F4F4F4;
+  --primary-foreground: #0B0B0B;
+  --secondary: #1C1C1C;
+  --secondary-foreground: #AAAAAA;
+  --muted: #1A1A1A;
+  --muted-foreground: #888888;
+  --accent: #8BC34A;
+  --accent-foreground: #0B0B0B;
+  --border: rgba(244, 244, 244, 0.08);
+  --ring: #8BC34A;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hide scrollbar until scrolling */
+::-webkit-scrollbar { width: 0; }
+html:hover::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease both;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
