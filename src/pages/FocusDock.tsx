@@ -11,7 +11,6 @@ import electronics02 from '@/assets/focus-dock/electronics-02a.png'
 import electronics03 from '@/assets/focus-dock/electronics-03.jpg'
 import electronics04 from '@/assets/focus-dock/electronics-04.jpeg'
 import detail01 from '@/assets/focus-dock/detail-front.png'
-import detail02 from '@/assets/focus-dock/Detail-back.png'
 import screen01 from '@/assets/focus-dock/screen-01.jpg'
 import screen02 from '@/assets/focus-dock/screen-02.jpg'
 import screen03 from '@/assets/focus-dock/screen-03.jpg'
@@ -329,7 +328,7 @@ export default function FocusDock() {
                 A physical dock paired with a mobile app that helps you start a focus session, step away from the screen, and reclaim your attention.
               </p>
               <div className="fd-two-col-tight">
-                {[detail01, detail02].map((src, i) => (
+                {[detail01].map((src, i) => (
                   <div key={i} style={{ borderRadius: 8, overflow: 'hidden', backgroundColor: 'var(--muted)' }}>
                     <img src={src} alt={`Focus Dock detail ${i + 1}`} style={{ width: '100%', aspectRatio: '3/3', objectFit: 'cover', display: 'block' }} />
                   </div>
