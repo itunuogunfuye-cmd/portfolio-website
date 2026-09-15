@@ -45,39 +45,44 @@ export default function Nav() {
   const { dark } = useTheme()
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
-const isCase = location.pathname !== '/'
+   const isCase = location.pathname !== '/'
+   const isNouriPage = location.pathname === '/projects/nouri'
 
-const pageTitles: Record<string, string> = {
+   const pageTitles: Record<string, string> = {
   '/projects/focus-dock': 'Focus Dock',
   '/projects/lego-police-story': 'LEGO Police Story',
   '/projects/smart-pantry': 'Smart Pantry',
   '/projects/nouri': 'Nouri',
-}
+  }
 
-const pageTitle = pageTitles[location.pathname] ?? ''
+  const pageTitle = pageTitles[location.pathname] ?? ''
 
   const links = [
-    { href: '/', label: 'Home' },
-    { href: '/#projects', label: 'Projects' },
-    { href: '/#about', label: 'About' },
-    { href: '/#resume', label: 'Resume' },
-    { href: '/#contact', label: 'Contact' },
-  ]
+   { href: '/', label: 'Home' },
+   { href: '/#projects', label: 'Projects' },
+   { href: '/#about', label: 'About' },
+   { href: '/#resume', label: 'Resume' },
+   { href: '/#contact', label: 'Contact' },
+   ]
 
-  return (
-    <header style={{
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      right: 0,
-      zIndex: 100,
-      backgroundColor: dark ? 'rgba(11,11,11,0.88)' : 'rgba(248,246,242,0.88)',
-      backdropFilter: 'blur(20px)',
-      WebkitBackdropFilter: 'blur(20px)',
-      borderBottom: '1px solid var(--border)',
-      transition: 'background-color 0.3s ease',
-    }}>
-      <div style={{
+   const navBg = isNouriPage ? (dark ? '#241C15' : '#F7F1E2') : dark ? 'rgba(11,11,11,0.88)' : 'rgba(248,246,242,0.88)'
+   const navText = isNouriPage ? (dark ? '#F7F1E2' : '#241C15') : 'var(--foreground)'
+   const navMuted = isNouriPage ? (dark ? '#E3D9C8' : '#5F4E44') : 'var(--muted-foreground)'
+   const navBorder = isNouriPage ? (dark ? '#5A4B3F' : '#DED2BC') : 'var(--border)'
+
+   return (
+   <header style={{
+     position: 'fixed',
+     top: 0,
+     left: 0,
+     right: 0,
+     zIndex: 100,
+     backgroundColor: navBg,
+     backdropFilter: 'blur(20px)',
+     WebkitBackdropFilter: 'blur(20px)',
+     borderBottom: `1px solid ${navBorder}`,
+     transition: 'background-color 0.3s ease',
+   }}>      <div style={{
         maxWidth: 1200,
         margin: '0 auto',
         padding: '0 40px',
@@ -91,7 +96,7 @@ const pageTitle = pageTitles[location.pathname] ?? ''
           fontSize: 12,
           fontWeight: 700,
           letterSpacing: '0.14em',
-          color: 'var(--foreground)',
+          color: navText,
           textDecoration: 'none',
           whiteSpace: 'nowrap',
         }}>
@@ -112,18 +117,18 @@ const pageTitle = pageTitles[location.pathname] ?? ''
     <Link
       to="/"
       style={{
-        color: 'var(--muted-foreground)',
+        color: navMuted,
         textDecoration: 'none',
       }}
     >
       Home
     </Link>
 
-    <span style={{ opacity: 0.4 }}>/</span>
+    <span style={{ opacity: 0.4, color: navMuted }}>/</span>
 
     <span
       style={{
-        color: 'var(--foreground)',
+        color: navText,
         fontWeight: 500,
       }}
     >
@@ -134,14 +139,14 @@ const pageTitle = pageTitles[location.pathname] ?? ''
           <nav style={{ display: 'flex', alignItems: 'center', gap: 36 }} className="desktop-nav">
             {links.map(({ href, label }) => (
               <a key={label} href={href} style={{
-                color: 'var(--muted-foreground)',
+                color: navMuted,
                 fontSize: 14,
                 fontWeight: 500,
                 textDecoration: 'none',
                 transition: 'color 0.2s',
               }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--foreground)')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--muted-foreground)')}
+                onMouseEnter={(e) => (e.currentTarget.style.color = navText)}
+                onMouseLeave={(e) => (e.currentTarget.style.color = navMuted)}
               >{label}</a>
             ))}
           </nav>
@@ -170,7 +175,7 @@ const pageTitle = pageTitles[location.pathname] ?? ''
       <div style={{ maxHeight: menuOpen ? 280 : 0, overflow: 'hidden', transition: 'max-height 0.3s ease', borderTop: menuOpen ? '1px solid var(--border)' : 'none' }} className="mobile-menu">
         <nav style={{ display: 'flex', flexDirection: 'column', padding: '16px 24px 24px', gap: 16 }}>
           {links.map(({ href, label }) => (
-            <a key={label} href={href} onClick={() => setMenuOpen(false)} style={{ color: 'var(--muted-foreground)', fontSize: 15, fontWeight: 500, textDecoration: 'none', padding: '4px 0' }}>{label}</a>
+            <a key={label} href={href} onClick={() => setMenuOpen(false)} style={{ color: navMuted, fontSize: 15, fontWeight: 500, textDecoration: 'none', padding: '4px 0' }}>{label}</a>
           ))}
         </nav>
       </div>
