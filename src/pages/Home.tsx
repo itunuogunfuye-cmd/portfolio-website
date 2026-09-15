@@ -188,6 +188,7 @@ export default function Home() {
               img={smartPantryImg}
             />
             <ProjectCard
+              to="/projects/nouri"
               title="Nouri"
               category="BRANDING • PACKAGING"
               desc="Building a healthy frozen dessert brand from strategy and visual identity to packaging and customer experience."

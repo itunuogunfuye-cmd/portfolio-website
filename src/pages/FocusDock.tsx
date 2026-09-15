@@ -582,7 +582,7 @@ export default function FocusDock() {
       <section className="fd-section-sm" style={{ borderTop: '1px solid var(--border)', backgroundColor: dark ? 'var(--card)' : 'var(--secondary)' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.18em', color: 'var(--muted-foreground)', marginBottom: 24, textAlign: 'center' }}>UP NEXT</p>
-          <Link to="/" style={{ display: 'block', textDecoration: 'none' }}>
+          <Link to="/projects/nouri" style={{ display: 'block', textDecoration: 'none' }}>
             <div
               className="fd-next-card"
               style={{ borderRadius: 16, overflow: 'hidden', border: '1px solid var(--border)', backgroundColor: dark ? 'var(--background)' : 'var(--card)', transition: 'box-shadow 0.3s ease' }}
