@@ -44,6 +44,8 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted-foreground) transparent;
 }
 
 body {
@@ -57,11 +59,25 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hide scrollbar until scrolling */
-::-webkit-scrollbar { width: 0; }
-html:hover::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted-foreground);
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--foreground);
+  background-clip: padding-box;
+}
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }

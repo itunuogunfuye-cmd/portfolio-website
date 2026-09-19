@@ -12,10 +12,6 @@ const globalStyles = `
     -webkit-font-smoothing: antialiased;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
-  ::-webkit-scrollbar { width: 0; }
-  html:hover::-webkit-scrollbar { width: 4px; }
-  ::-webkit-scrollbar-track { background: transparent; }
-  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
   a { text-decoration: none; }
 
   @media (max-width: 768px) {

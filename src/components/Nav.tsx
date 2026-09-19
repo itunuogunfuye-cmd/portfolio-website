@@ -46,7 +46,6 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
    const isCase = location.pathname !== '/'
-   const isNouriPage = location.pathname === '/projects/nouri'
 
    const pageTitles: Record<string, string> = {
   '/projects/focus-dock': 'Focus Dock',
@@ -65,10 +64,10 @@ export default function Nav() {
    { href: '/#contact', label: 'Contact' },
    ]
 
-   const navBg = isNouriPage ? (dark ? '#241C15' : '#F7F1E2') : dark ? 'rgba(11,11,11,0.88)' : 'rgba(248,246,242,0.88)'
-   const navText = isNouriPage ? (dark ? '#F7F1E2' : '#241C15') : 'var(--foreground)'
-   const navMuted = isNouriPage ? (dark ? '#E3D9C8' : '#5F4E44') : 'var(--muted-foreground)'
-   const navBorder = isNouriPage ? (dark ? '#5A4B3F' : '#DED2BC') : 'var(--border)'
+   const navBg = dark ? 'rgba(11,11,11,0.88)' : 'rgba(248,246,242,0.88)'
+   const navText = 'var(--foreground)'
+   const navMuted = 'var(--muted-foreground)'
+   const navBorder = 'var(--border)'
 
    return (
    <header style={{
