@@ -25,6 +25,7 @@ import ingredient2 from '@/assets/nouri/strawberry ingredient.png'
 import display from '@/assets/nouri/display.png'
 import campaign from '@/assets/nouri/campaign.png'
 import fullrange2 from '@/assets/nouri/pyramid full range.png'
+import smartpantry from '@/assets/smart pantry.png'
 
 
 
@@ -45,6 +46,7 @@ const IMG = {
     product2: product2,
     display: display,
     campaign: campaign,
+    smartpantry: smartpantry,
 }
 
 /* --- Responsive styles --- */
@@ -1507,7 +1509,7 @@ export default function Nouri() {
                             </div>
                             <div className="nr-next-img" style={{ overflow: 'hidden', backgroundColor: 'var(--muted)' }}>
                                 <img
-                                    src={IMG.campaign}
+                                    src={IMG.smartpantry}
                                     alt="Smart Pantry next project"
                                     style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.5s ease' }}
                                     onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.04)')}
