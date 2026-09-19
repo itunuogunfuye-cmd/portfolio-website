@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router'
-import nouri from '@/assets/focus-dock/Nouri.jpg'
+
 import trailer from '@/assets/lego-police-story/trailer.mp4'
 import storyboard1 from '@/assets/lego-police-story/storyboard-01.png'
 import storyboard2 from '@/assets/lego-police-story/storyboard-02.png'
@@ -25,6 +25,7 @@ import render05 from '@/assets/lego-police-story/render-05.png'
 import chaseGif from '@/assets/lego-police-story/chase.gif'
 import finalFilm from '@/assets/lego-police-story/final-film.mp4'
 import filmPoster from '@/assets/lego-police-story/poster.png' // optional
+import nouriImg from '@/assets/nouri/product.png'
 
 
 /* ─── Responsive style sheet ─── */
@@ -915,7 +916,7 @@ Working across Mecabricks, Blender, and Unity also strengthened my understanding
                 }}
               >
                 <img
-                  src={nouri}
+                  src={nouriImg}
                   alt="Nouri project preview"
                   style={{
                     width: '100%',
@@ -928,6 +929,25 @@ Working across Mecabricks, Blender, and Unity also strengthened my understanding
               </div>
             </div>
           </Link>
+           <div style={{ display: 'flex', justifyContent: 'center', marginTop: 40 }}>
+                        <Link
+                            to="/projects/focus-dock"
+                            style={{
+                                fontSize: 13,
+                                fontWeight: 500,
+                                color: 'var(--muted-foreground)',
+                                textDecoration: 'none',
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: 8,
+                                transition: 'color 0.2s',
+                            }}
+                            onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--foreground)')}
+                            onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--muted-foreground)')}
+                        >
+                            ← Previous: Focus Dock
+                        </Link>
+                    </div>
         </div>
       </section>
 

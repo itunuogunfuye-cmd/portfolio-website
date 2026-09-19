@@ -582,7 +582,7 @@ export default function FocusDock() {
       <section className="fd-section-sm" style={{ borderTop: '1px solid var(--border)', backgroundColor: dark ? 'var(--card)' : 'var(--secondary)' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.18em', color: 'var(--muted-foreground)', marginBottom: 24, textAlign: 'center' }}>UP NEXT</p>
-          <Link to="/projects/nouri" style={{ display: 'block', textDecoration: 'none' }}>
+          <Link to="/projects/lego-police-story" style={{ display: 'block', textDecoration: 'none' }}>
             <div
               className="fd-next-card"
               style={{ borderRadius: 16, overflow: 'hidden', border: '1px solid var(--border)', backgroundColor: dark ? 'var(--background)' : 'var(--card)', transition: 'box-shadow 0.3s ease' }}
@@ -590,11 +590,10 @@ export default function FocusDock() {
               onMouseLeave={(e) => (e.currentTarget.style.boxShadow = 'none')}
             >
               <div className="fd-next-text" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.14em', color: 'var(--accent)', marginBottom: 16 }}>BRANDING • PACKAGING</span>
-                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(28px, 3vw, 42px)', fontWeight: 400, color: 'var(--foreground)', marginBottom: 16, lineHeight: 1.2 }}>Nouri</h3>
+                <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.14em', color: 'var(--accent)', marginBottom: 16 }}>3D • CINEMATICS</span>
+                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(28px, 3vw, 42px)', fontWeight: 400, color: 'var(--foreground)', marginBottom: 16, lineHeight: 1.2 }}></h3>
                 <p style={{ fontSize: 15, color: 'var(--muted-foreground)', lineHeight: 1.7, marginBottom: 32 }}>
-                  Building a healthy frozen dessert brand from strategy and visual identity to packaging and customer experience.
-                </p>
+                  A short cinematic animation showcasing storytelling, environment design, and dynamic camera work using Unity and Cinemachine.                </p>
                 <span style={{ fontSize: 14, fontWeight: 500, color: 'var(--accent)', display: 'inline-flex', alignItems: 'center', gap: 8 }}>View Next Project →</span>
               </div>
               <div className="fd-next-img" style={{ overflow: 'hidden', backgroundColor: 'var(--muted)' }}>

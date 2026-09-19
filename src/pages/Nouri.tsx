@@ -7,24 +7,46 @@ import logoVariation01Png from '@/assets/nouri/Asset 4.png'
 import logoVariation02Png from '@/assets/nouri/Asset 5.png'
 import logoVariation03Png from '@/assets/nouri/Asset 6.png'
 import logoVariation04Png from '@/assets/nouri/Asset 7.png'
-import backPanelImg from '@/assets/nouri/Nouri-10.png'
-import darkBackPanelImg from '@/assets/nouri/Nouri-dark.png'
+import backPanelImg from '@/assets/nouri/nouri-10.png'
+import darkBackPanelImg from '@/assets/nouri/nouri-dark.png'
 import flatLabelPng from '@/assets/nouri/flat label.png'
+import Hero from '@/assets/nouri/hero.png'
+import ingredient1 from '@/assets/nouri/mango.png'
+import brief from '@/assets//nouri/cocoa dream.png'
+import packaging1 from '@/assets/nouri/berry.png'
+import packaging2 from '@/assets/nouri/mango bliss 2.png'
+import lids from '@/assets/nouri/lids.png'
+import fullrange from '@/assets/nouri//full range.png'
+import product1 from '@/assets/nouri/strawberry enviroment.png'
+import product2 from '@/assets/nouri/product.png'
+import texture1 from '@/assets/nouri/mango texture.png'
+import texture2 from '@/assets/nouri/strawberry texture.png'
+import ingredient2 from '@/assets/nouri/Strawberry ingredient.png'
+import display from '@/assets/nouri/display.png'
+import campaign from '@/assets/nouri/campaign.png'
+import fullrange2 from '@/assets/nouri/pyramid full range.png'
+
 
 
 /* ─── Unsplash placeholder images ─── */
 const IMG = {
-    hero: 'https://images.unsplash.com/photo-1629385744299-74b9cf013f52?w=1200&h=900&fit=crop&auto=format',
-    brief: 'https://images.unsplash.com/photo-1580915411954-282cb1b0d780?w=900&h=700&fit=crop&auto=format',
-    texture1: 'https://images.unsplash.com/photo-1775582324875-f70695d963e9?w=1200&h=800&fit=crop&auto=format',
-    texture2: 'https://images.unsplash.com/photo-1766739347473-0036db7a8828?w=900&h=700&fit=crop&auto=format',
-    ingredient1: 'https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=600&h=900&fit=crop&auto=format',
-    ingredient2: 'https://images.unsplash.com/photo-1438907046657-4ae137eb8c5e?w=600&h=900&fit=crop&auto=format',
+    hero: Hero,
+    brief: brief,
+    texture1: texture1,
+    texture2: texture2,
+    ingredient1: ingredient1,
+    ingredient2: ingredient2,
     ingredient3: 'https://images.unsplash.com/photo-1549007953-2f2dc0b24019?w=600&h=900&fit=crop&auto=format',
-    packaging1: 'https://images.unsplash.com/photo-1629385742818-32909d7b45a2?w=900&h=700&fit=crop&auto=format',
-    packaging2: 'https://images.unsplash.com/photo-1717853411695-c9f844e1df46?w=900&h=700&fit=crop&auto=format',
-    cone: 'https://images.unsplash.com/photo-1563589173312-476d8c36b242?w=900&h=700&fit=crop&auto=format',
+    packaging1: packaging1,
+    packaging2: packaging2,
+    lids: lids,
+    full: fullrange,
+    fullrange2: fullrange2,
     scoops: flatLabelPng,
+    product1: product1,
+    product2: product2,
+    display: display,
+    campaign: campaign,
     nextProject: 'https://images.unsplash.com/photo-1580915411954-282cb1b0d780?w=900&h=600&fit=crop&auto=format',
 }
 
@@ -1002,12 +1024,12 @@ export default function Nouri() {
                     <Reveal delay={60}>
                         <StepDivider num="01" title="Tub packaging" />
                         <div className="nr-two-col-md" style={{ marginBottom: 16 }}>
-                            <ImgZoom src={IMG.packaging1} alt="Nouri tub — front face" aspect="4/3" placeholder="[PACKAGING MOCKUP — TUB FRONT]" />
-                            <ImgZoom src={IMG.packaging2} alt="Nouri tub — detail" aspect="4/3" placeholder="[PACKAGING MOCKUP — TUB DETAIL]" />
+                            <ImgZoom src={IMG.packaging1} alt="Nouri tub — front face" aspect="4/3" />
+                            <ImgZoom src={IMG.packaging2} alt="Nouri tub — detail" aspect="4/3" />
                         </div>
                         <div className="nr-two-col-tight" style={{ marginBottom: 48 }}>
-                            <ImgZoom src={IMG.cone} alt="Nouri lid detail" aspect="16/9" placeholder="[PACKAGING MOCKUP — LID]" />
-                            <ImgZoom src={IMG.hero} alt="Full Nouri flavour range" aspect="16/9" placeholder="[FULL FLAVOUR RANGE — ALL 6 TUBS]" />
+                            <ImgZoom src={IMG.lids} alt="Nouri lid detail" aspect="16/9" />
+                            <ImgZoom src={IMG.full} alt="Full Nouri flavour range" aspect="16/9"  />
                         </div>
                     </Reveal>
 
@@ -1209,7 +1231,7 @@ export default function Nouri() {
                                 </div>
                             </div>
                             <div>
-                                <ImgZoom src={IMG.ingredient1} alt="Ingredient still" aspect="3/4" radius={10} objectPosition="top" placeholder="[INGREDIENT STILL — MANGO]" />
+                                <ImgZoom src={IMG.ingredient2} alt="Ingredient still" aspect="3/4" radius={10} objectPosition="top" placeholder="[INGREDIENT STILL — MANGO]" />
                                 <div style={{ paddingTop: 20 }}>
                                     <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', color: 'var(--accent)', marginBottom: 8 }}>INGREDIENT STILLS</p>
                                     <p style={{ fontSize: 14, color: 'var(--muted-foreground)', lineHeight: 1.7 }}>
@@ -1218,7 +1240,7 @@ export default function Nouri() {
                                 </div>
                             </div>
                             <div>
-                                <ImgZoom src={IMG.ingredient2} alt="Product in context" aspect="3/4" radius={10} placeholder="[PRODUCT IN CONTEXT]" />
+                                <ImgZoom src={IMG.product1} alt="Product in context" aspect="3/4" radius={10}  />
                                 <div style={{ paddingTop: 20 }}>
                                     <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', color: 'var(--accent)', marginBottom: 8 }}>PRODUCT IN CONTEXT</p>
                                     <p style={{ fontSize: 14, color: 'var(--muted-foreground)', lineHeight: 1.7 }}>
@@ -1248,7 +1270,7 @@ export default function Nouri() {
                                     ))}
                                 </div>
                             </div>
-                            <ImgZoom src={IMG.ingredient3} alt="Ingredient photography" aspect="3/4" radius={12} placeholder="[INGREDIENT STILL — SECONDARY]" />
+                            <ImgZoom src={IMG.product2} alt="Ingredient photography" aspect="3/4" radius={12} placeholder="[INGREDIENT STILL — SECONDARY]" />
                         </div>
                     </Reveal>
                 </div>
@@ -1270,14 +1292,14 @@ export default function Nouri() {
                     <Reveal delay={60}>
                         <div className="nr-two-col-md" style={{ marginBottom: 48 }}>
                             <ImgZoom
-                                src={IMG.packaging1}
+                                src={IMG.display}
                                 alt="Packaging system"
                                 aspect="4/3"
                                 radius={12}
                                 placeholder="[PACKAGING SYSTEM — FULL RANGE]"
                             />
                             <ImgZoom
-                                src={IMG.cone}
+                                src={IMG.campaign}
                                 alt="Digital touchpoints"
                                 aspect="4/3"
                                 radius={12}
@@ -1306,7 +1328,7 @@ export default function Nouri() {
                     <Reveal delay={100}>
                         <div style={{ marginTop: 48 }}>
                             <ImgZoom
-                                src={IMG.packaging2}
+                                src={IMG.fullrange2}
                                 alt="Campaign composition"
                                 aspect="21/9"
                                 radius={14}

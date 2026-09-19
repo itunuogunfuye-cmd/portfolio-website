@@ -3,7 +3,8 @@ import { Link } from 'react-router'
 import { useTheme } from '@/context/theme'
 import focusDockImg from '@/imports/Dockfinal.png'
 import legoImg from '@/imports/lego.png'
-import smartPantryImg from '@/imports/lego.png'
+import smartPantryImg from '@/assets/smart pantry.png'
+import nouriImg from '@/assets/nouri/product.png'
 import Detail01 from '@/assets/focus-dock/detail-front.png'
 
 function CurrentlyItem({ icon, text }: { icon: string; text: string }) {
@@ -180,21 +181,24 @@ export default function Home() {
               year="2026"
               img={legoImg}
             />
-            <ProjectCard
-              title="Smart Pantry"
-              category="PRODUCT DESIGN • UX/UI"
-              desc="Designing a connected kitchen experience that helps people organize homemade meals with smart labeling and inventory tracking."
-              year="2025"
-              img={smartPantryImg}
-            />
+           
             <ProjectCard
               to="/projects/nouri"
               title="Nouri"
               category="BRANDING • PACKAGING"
               desc="Building a healthy frozen dessert brand from strategy and visual identity to packaging and customer experience."
               year="2025"
-              img="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&h=400&fit=crop&auto=format"
+              img={nouriImg}
             />
+
+             <ProjectCard
+              title="Smart Pantry"
+              category="PRODUCT DESIGN • UX/UI"
+              desc="Designing a connected kitchen experience that helps people organize homemade meals with smart labeling and inventory tracking."
+              year="2025"
+              img={smartPantryImg}
+            />
+
           </div>
         </div>
       </section>
