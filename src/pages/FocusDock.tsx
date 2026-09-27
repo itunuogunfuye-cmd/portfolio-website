@@ -215,7 +215,7 @@ export default function FocusDock() {
               </h1>
 
               <p style={{ fontSize: 'clamp(15px, 1.8vw, 17px)', color: 'var(--muted-foreground)', lineHeight: 1.75, maxWidth: 400 }}>
-                A smart productivity dock that helps stop distracted by combining physical interaction with a connected mobile experience.
+                A smart productivity dock that helps stop distractions by combining physical interaction with a connected mobile experience.
               </p>
 
               {/* Meta row */}
