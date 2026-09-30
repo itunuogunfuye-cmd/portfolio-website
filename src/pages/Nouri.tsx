@@ -1482,7 +1482,7 @@ export default function Nouri() {
             >
                 <div style={{ maxWidth: 1200, margin: '0 auto' }}>
                     <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.18em', color: 'var(--muted-foreground)', marginBottom: 24, textAlign: 'center' }}>UP NEXT</p>
-                    <Link to="/" style={{ display: 'block', textDecoration: 'none' }}>
+                    <Link to="/projects/kitrah" style={{ display: 'block', textDecoration: 'none' }}>
                         <div
                             className="nr-next-card"
                             style={{

@@ -17,7 +17,7 @@ import bridgeImage from "@/assets/kitrah/kitrah-bridge.svg";
 import testingImage from "@/assets/kitrah/kitrah-testing.svg";
 import "./kitrah.css";
 
-const lifecycle = ["PREPARE", "WEIGH", "REVIEW", "REVIEW", "STORE", "FIND"];
+const lifecycle = ["PREPARE", "WEIGH", "REVIEW", "LABEL", "STORE", "FIND"];
 
 const journey = [
   ["01", "Prepare", "Choose a recipe or batch", "DIGITAL"],
