@@ -3,6 +3,7 @@ import Home from '@/pages/Home'
 import FocusDock from '@/pages/FocusDock'
 import LegoPoliceStory from '@/pages/LegoPoliceStory'
 import Nouri from '@/pages/Nouri'
+import Kitrah from '@/pages/Kitrah'
 
 export const routeConfig = [
   {
@@ -13,6 +14,7 @@ export const routeConfig = [
       { path: 'projects/focus-dock', Component: FocusDock },
       { path: 'projects/lego-police-story', Component: LegoPoliceStory },
       { path: 'projects/nouri', Component: Nouri },
+      { path: 'projects/Kitrah', Component: Kitrah },
     ],
   },
 ]

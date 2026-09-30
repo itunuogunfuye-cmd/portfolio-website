@@ -192,7 +192,8 @@ export default function Home() {
             />
 
              <ProjectCard
-              title="Smart Pantry"
+              to="/projects/Kitrah"
+              title="Kitrah"
               category="PRODUCT DESIGN • UX/UI"
               desc="Designing a connected kitchen experience that helps people organize homemade meals with smart labeling and inventory tracking."
               year="2025"

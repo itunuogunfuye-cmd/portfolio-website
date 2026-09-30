@@ -1498,7 +1498,7 @@ export default function Nouri() {
                             <div className="nr-next-text" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                                 <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.16em', color: 'var(--nouri-accent)', marginBottom: 16 }}>PRODUCT DESIGN · UX/UI</span>
                                 <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(26px, 3vw, 40px)', fontWeight: 400, color: 'var(--foreground)', marginBottom: 16, lineHeight: 1.2 }}>
-                                    Smart Pantry
+                                    Kitrah
                                 </h3>
                                 <p style={{ fontSize: 15, color: 'var(--muted-foreground)', lineHeight: 1.7, marginBottom: 32, maxWidth: 460 }}>
                                     A connected kitchen experience that helps people organise homemade meals with smart labelling and inventory tracking.

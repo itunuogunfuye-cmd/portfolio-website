@@ -52,6 +52,7 @@ export default function Nav() {
   '/projects/lego-police-story': 'LEGO Police Story',
   '/projects/smart-pantry': 'Smart Pantry',
   '/projects/nouri': 'Nouri',
+  '/projects/Kitrah': 'Kitrah',
   }
 
   const pageTitle = pageTitles[location.pathname] ?? ''

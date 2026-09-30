@@ -12,6 +12,7 @@ const routes = [
   '/projects/focus-dock',
   '/projects/lego-police-story',
   '/projects/nouri',
+  '/projects/Kitrah',
 ]
 
 for (const route of routes) {

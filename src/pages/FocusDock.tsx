@@ -513,12 +513,14 @@ export default function FocusDock() {
             <H2 center>Built to help you focus, simply.</H2>
           </div>
 
-          <div style={{ background: '#0D0D0D', borderRadius: 28, padding: 'clamp(32px, 6vw, 80px)', overflow: 'hidden', marginBottom: 72 }}>
-            <img
-              src={focusDockImg}
-              alt="Focus Dock final"
-              style={{ width: '100%', maxWidth: 900, display: 'block', margin: '0 auto', objectFit: 'contain', userSelect: 'none' }}
-            />
+          <div style={{ background: '#0D0D0D', borderRadius: 28, padding: 'clamp(20px, 4vw, 40px)', overflow: 'hidden', marginBottom: 72 }}>
+            <div style={{ width: '100%', maxWidth: 900, aspectRatio: '1 / 1', overflow: 'hidden', margin: '0 auto' }}>
+              <img
+                src={focusDockImg}
+                alt="Focus Dock final"
+                style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover', objectPosition: 'center bottom', userSelect: 'none' }}
+              />
+            </div>
           </div>
 
           <div className="fd-five-col">
